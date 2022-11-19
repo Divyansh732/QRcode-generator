@@ -1,0 +1,10 @@
+import pyqrcode 
+from pyqrcode import QRCode 
+  
+# String which represent the QR code 
+s = "https://github.com/Divyansh732"
+  
+# Generate QR code 
+url = pyqrcode.create(s) 
+
+url.svg("mygithub.svg", scale = 8) 
